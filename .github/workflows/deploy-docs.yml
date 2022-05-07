@@ -1,5 +1,5 @@
 name: 部署文档
-# 工作流触发条件
+
 on:
   push:
     branches:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   depoly-gh-pages:
-    # 运行环境
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,22 +14,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/cache@v3
-        id: node-modules
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          path: node-modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+          version: 7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
 
       - name: Install Deps
-        if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Build Docs
         env:
           NODE-OPTIONS: --max_old_space_size=8192
-        run: yarn run docs:build
+        run: pnpm run docs:build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
