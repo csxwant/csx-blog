@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: 主页
-bgImage: /images/world.jpg
+bgImage: /world.jpg
 
 [//]: # (heroImage: /logo.svg)
 heroText: CSXWANT

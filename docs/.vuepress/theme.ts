@@ -15,7 +15,7 @@ export default hopeTheme({
   iconPrefix: "iconfont icon-",
 
   // 页面左上角图标
-  logo: "/images/logo.jpg",
+  logo: "/logo.jpg",
 
   repo: "csxwant/csx-blog",
 
