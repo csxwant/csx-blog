@@ -17,10 +17,12 @@ export default hopeTheme({
   // 页面左上角图标
   logo: "/logo.jpg",
 
-  repo: "https://github.com/csxwant/csx-blog.git",
+  repo: "csxwant/csx-blog",
 
   // 文档在仓库中的目录
-  docsDir: "csx-blog/docs",
+  docsDir: "docs",
+  // 分支
+  docsBranch: "master",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
@@ -69,7 +71,7 @@ export default hopeTheme({
       // sidebar
       sidebar: sidebar.zh,
 
-      footer: "默认页脚",
+      footer: "",
 
       displayFooter: true,
 

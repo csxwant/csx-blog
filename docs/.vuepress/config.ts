@@ -1,5 +1,7 @@
 import { defineUserConfig } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme";
+
 
 export default defineUserConfig({
   base: "/csx-blog/",
@@ -21,6 +23,19 @@ export default defineUserConfig({
       description: "csx-blog",
     },
   },
+
+  plugins: [
+    searchPlugin({
+      // ...
+
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+      hotKeys: ['k', '/'],
+    }),
+  ],
 
   theme,
 });

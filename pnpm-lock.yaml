@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vuepress/client': ^2.0.0-beta.43
+  '@vuepress/plugin-search': 2.0.0-beta.43
   cypress: ^4.5.0
   jest: '>=20 <=26'
   vue: ^3.2.33
@@ -14,6 +15,7 @@ dependencies:
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.43
+  '@vuepress/plugin-search': 2.0.0-beta.43
   vue: 3.2.33
   vuepress: 2.0.0-beta.43_f3cmfsc4botavqrm6v6tctsjbm
   vuepress-theme-hope: 2.0.0-beta.52_cypress@4.12.1+jest@26.6.3
@@ -2004,6 +2006,20 @@ packages:
     dependencies:
       '@vuepress/core': 2.0.0-beta.43
       prismjs: 1.28.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-search/2.0.0-beta.43:
+    resolution: {integrity: sha512-q1py7LajaFFDM12zWjcWw6i8vOn3s3nT05+4zTVH+zf4qa4M3gabPa/M2Jx/hUU3wYXzviZMMjw3KFYM1CGNjw==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.43
+      '@vuepress/core': 2.0.0-beta.43
+      '@vuepress/shared': 2.0.0-beta.43
+      '@vuepress/utils': 2.0.0-beta.43
+      chokidar: 3.5.3
+      vue: 3.2.33
+      vue-router: 4.0.15_vue@3.2.33
     transitivePeerDependencies:
       - supports-color
     dev: true
