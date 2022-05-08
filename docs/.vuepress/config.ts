@@ -19,7 +19,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "CSX-BLOG",
+      title: "我的博客",
       description: "csx-blog",
     },
   },
