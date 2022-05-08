@@ -1,0 +1,1 @@
+const e={key:"v-b302fdee",path:"/tag/vpn/",title:"vpn \u6807\u7B7E",lang:"zh-CN",frontmatter:{title:"vpn \u6807\u7B7E",blog:{type:"category",name:"vpn",key:"tag"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},filePathRelative:null};export{e as data};
