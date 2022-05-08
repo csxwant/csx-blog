@@ -27,6 +27,13 @@ export const zh = sidebar({
       prefix: "pan-download/",
       collapsable: true,
       children: "structure",
+    },
+    {
+      text: "科学上网",
+      icon: "creative",
+      prefix: "vpn/",
+      collapsable: true,
+      children: "structure",
     }
   ]
 });

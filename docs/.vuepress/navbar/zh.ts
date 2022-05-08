@@ -25,6 +25,14 @@ export const zh = navbar([
           { text: "百度网盘", icon: "edit", link: "no-limit-download" },
         ]
       },
+      {
+        text: "科学上网",
+        icon: "edit",
+        prefix: "vpn/",
+        children: [
+          { text: "开启科学上网", icon: "edit", link: "methods" },
+        ]
+      },
     ],
   },
   {
