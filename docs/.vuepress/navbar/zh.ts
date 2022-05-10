@@ -31,6 +31,7 @@ export const zh = navbar([
         prefix: "vpn/",
         children: [
           { text: "开启科学上网", icon: "edit", link: "methods" },
+          { text: "CFW配置", icon: "edit", link: "cfw_setting" }
         ]
       },
     ],
