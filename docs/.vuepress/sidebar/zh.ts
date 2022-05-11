@@ -33,7 +33,10 @@ export const zh = sidebar({
       icon: "creative",
       prefix: "vpn/",
       collapsable: true,
-      children: "structure",
+      children: [
+        { text: "开启科学上网", icon: "edit", link: "methods" },
+        { text: "CFW配置", icon: "edit", link: "cfw_setting" }
+      ]
     }
   ]
 });
