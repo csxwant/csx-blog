@@ -54,7 +54,7 @@ proxy-providers:
     health-check: #health check option start at here
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 21600  # 检测代理延迟间隔
+      interval: 600  # 检测代理延迟间隔
 
 rule-providers:
   reject:
