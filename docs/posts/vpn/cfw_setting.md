@@ -207,7 +207,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     use:
-      - suying666
+      - my-subscription
 
   - name: 🛵 luxury免费代理
     type: url-test
