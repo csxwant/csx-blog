@@ -38,5 +38,6 @@ export const zh = sidebar({
         { text: "CFW配置", icon: "edit", link: "cfw_setting" }
       ]
     }
-  ]
+  ],
+  "/leetcode": "structure"
 });

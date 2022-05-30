@@ -37,6 +37,11 @@ export const zh = navbar([
     ],
   },
   {
+    text: "Leetcode刷题笔记",
+    icon: "anonymous",
+    link: "/leetcode",
+  },
+  {
     text: "主题文档",
     icon: "note",
     link: "https://vuepress-theme-hope.github.io/v2/zh/",
