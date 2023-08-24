@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  depoly-gh-pages:
+  deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,7 +17,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
+          # 使用 pnpm 安装依赖
+          run_install: true
+
+      # 运行构建脚本
+      - name: Build VuePress site
+        run: pnpm docs:build
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -25,17 +31,18 @@ jobs:
           node-version: 16
           cache: pnpm
 
-      - name: Install Deps
-        run: pnpm install --frozen-lockfile
-
       - name: Build Docs
         env:
           NODE-OPTIONS: --max_old_space_size=8192
         run: pnpm run docs:build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          branch: blog
-          folder: docs/.vuepress/dist
-          token: ${{ secrets.ACCESS_TOKEN }}
+          # 部署到 gh-pages 分支
+          target_branch: blog
+          # 部署目录为 VuePress 的默认输出目录
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
