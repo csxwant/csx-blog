@@ -28,7 +28,6 @@ export default hopeTheme({
 
   blog: {
     medias: {
-      Email: "18166139880@163.com",
       GitHub: "https://github.com/csxwant",
       Gitee: "https://gitee.com/csxwant",
     },

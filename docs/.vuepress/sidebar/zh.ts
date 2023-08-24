@@ -2,40 +2,48 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const zh = sidebar({
   "/": [
-    "",
-    "home",
-    "slide",
+    // "home",
+    // "slide",
+    // {
+    //   text: "如何使用",
+    //   icon: "creative",
+    //   prefix: "guide/",
+    //   link: "guide/",
+    //   children: "structure",
+    // },
+  ],
+  "/code-life/": [
     {
-      text: "如何使用",
-      icon: "creative",
-      prefix: "guide/",
-      link: "guide/",
+      text: "前端知识",
+      icon: "front",
+      prefix: "front/",
+      collapsable: true,
       children: "structure",
     },
   ],
-  "/posts/": [
+  "/software-guide/": [
     {
       text: "视频剪辑",
-      icon: "creative",
-      prefix: "vedio-clip/",
+      icon: "video-cut",
+      prefix: "video-cut/",
       collapsable: true,
       children: "structure",
     },
     {
       text: "度盘下载",
-      icon: "creative",
+      icon: "wangpan",
       prefix: "pan-download/",
       collapsable: true,
       children: "structure",
     },
     {
       text: "科学上网",
-      icon: "creative",
+      icon: "airport",
       prefix: "vpn/",
       collapsable: true,
       children: [
-        { text: "开启科学上网", icon: "edit", link: "methods" },
-        { text: "CFW配置", icon: "edit", link: "cfw_setting" }
+        { text: "开启科学上网", icon: "airport", link: "methods" },
+        { text: "CFW配置", icon: "config", link: "cfw_setting" }
       ]
     }
   ],

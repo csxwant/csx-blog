@@ -3,40 +3,53 @@ import { navbar } from "vuepress-theme-hope";
 export const zh = navbar([
   "/",
   {
+    text: "编程之路",
+    icon: "code",
+    prefix: "/code-life/",
+    children: [
+      {
+        text: "前端知识",
+        icon: "front",
+        prefix: "front/",
+        children: [
+          { text: "nvm安装", icon: "edit", link: "nvm-install" },
+        ],
+      },
+    ]
+  },
+  {
     text: "软件教程",
-    icon: "edit",
+    icon: "yingyong",
     prefix: "/software-guide/",
     children: [
       {
         text: "视频剪辑",
-        icon: "edit",
         prefix: "video-cut/",
         children: [
-          { text: "直播流保存", icon: "edit", link: "live-stream-save" },
+          { text: "直播流保存", icon: "live-stream", link: "live-stream-save" },
         ],
       },
       {
         text: "度盘下载",
-        icon: "edit",
         prefix: "pan-download/",
         children: [
-          { text: "百度网盘", icon: "edit", link: "no-limit-download" },
+          { text: "百度网盘", icon: "wangpan", link: "no-limit-download" },
         ]
       },
       {
         text: "科学上网",
-        icon: "edit",
+        icon: "code",
         prefix: "vpn/",
         children: [
-          { text: "开启科学上网", icon: "edit", link: "methods" },
-          { text: "CFW配置", icon: "edit", link: "cfw_setting" }
+          { text: "起飞教程", icon: "airport", link: "methods" },
+          { text: "CFW配置", icon: "config", link: "cfw_setting" }
         ]
       },
     ],
   },
   {
-    text: "Leetcode刷题笔记",
-    icon: "anonymous",
+    text: "刷题笔记",
+    icon: "leetcode",
     link: "/leetcode",
   },
   // "/home",

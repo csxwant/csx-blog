@@ -5,7 +5,7 @@ icon: home
 title: 主页
 bgImage: /world.jpg
 
-[//]: # (heroImage: /logo.svg)
+#[//]: # (heroImage: /logo.svg)
 heroText: CSXWANT
 heroFullScreen: true
 tagline: 蠢蛋！

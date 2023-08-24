@@ -11,7 +11,7 @@ export default defineUserConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
+        href: "//at.alicdn.com/t/c/font_3375345_btvz9znj9k.css",
       },
     ],
   ],
