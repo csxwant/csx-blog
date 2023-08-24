@@ -41,9 +41,9 @@ export const zh = navbar([
     icon: "anonymous",
     link: "/leetcode",
   },
-  {
-    text: "主题文档",
-    icon: "note",
-    link: "https://vuepress-theme-hope.github.io/v2/zh/",
-  },
+  // {
+  //   text: "主题文档",
+  //   icon: "note",
+  //   link: "https://vuepress-theme-hope.github.io/v2/zh/",
+  // },
 ]);
