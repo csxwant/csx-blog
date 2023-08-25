@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-49b2f58a","path":"/software-guide/vpn/","title":"Vpn","lang":"zh-CN","frontmatter":{"title":"Vpn","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

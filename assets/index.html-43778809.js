@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b302fdee","path":"/tag/vpn/","title":"标签: vpn","lang":"zh-CN","frontmatter":{"title":"标签: vpn","dir":{"index":false},"feed":false,"sitemap":false,"blog":{"type":"category","name":"vpn","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":""}');export{e as data};

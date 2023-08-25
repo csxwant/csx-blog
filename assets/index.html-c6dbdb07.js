@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1f7cbbf7","path":"/software-guide/pan-download/","title":"Pan Download","lang":"zh-CN","frontmatter":{"title":"Pan Download","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

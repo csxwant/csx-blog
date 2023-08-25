@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0076f7bf","path":"/software-guide/video-cut/","title":"Video Cut","lang":"zh-CN","frontmatter":{"title":"Video Cut","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

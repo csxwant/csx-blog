@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-57e15c8c","path":"/code-life/","title":"Code Life","lang":"zh-CN","frontmatter":{"title":"Code Life","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};
